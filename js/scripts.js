@@ -1,4 +1,4 @@
-var fullAddress = function(address){
+var fullAddress = function(address) {
 
 var formattedAddress = address.street + "\n" +address.city + " "+ address.state + " " +address.zip;
 return formattedAddress;
