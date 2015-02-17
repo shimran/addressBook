@@ -7,28 +7,26 @@ $(document).ready(function(){
     var inputAddress = $("input#new-address").val();
     var inputTelephone = $("input#new-telephone").val();
     var newContact = { firstName: inputFirstName,
-                        lastName: inputLastName,
-                        address: inputAddress,
-                        telephone: inputTelephone };
+      lastName: inputLastName,
+      address: inputAddress,
+      telephone: inputTelephone };
 
 
-  $("ul#contact").append("<li><span class='contact'>" + newContact.firstName + " " + newContact.lastName + "</span> </li>");
-  $("input#new-first-name").val("");
-  $("input#new-last-name").val("");
-  $("input#new-address").val("");
-  $("input#new-telephone").val("");
+    $("ul#contact").append("<li><span class='contact'>" + newContact.firstName + " " + newContact.lastName + "</span> </li>");
+    $("input#new-first-name").val("");
+    $("input#new-last-name").val("");
+    $("input#new-address").val("");
+    $("input#new-telephone").val("");
 
-  // Append id=contact to the form, and then use a span class =contact to store information for each link
+    // Append id=contact to the form, and then use a span class =contact to store information for each link
 
-$(".contact").last().click(function() {
-  $("#show-contact").show();
-  $("#show-contact h2").text(newContact.firstName + " " + newContact.lastName);
-  $(".first-name").text(newContact.firstName);
-  $(".last-name").text(newContact.lastName);
-  $(".address").text(newContact.address);
-  $(".telephone").text(newContact.telephone);
-
+    $(".contact").last().click(function() {
+      $("#show-contact").show();
+      $("#show-contact h2").text(newContact.firstName + " " + newContact.lastName);
+      $(".first-name").text(newContact.firstName);
+      $(".last-name").text(newContact.lastName);
+      $(".address").text(newContact.address);
+      $(".telephone").text(newContact.telephone);
+    });
   });
-
-  });
- });
+});
