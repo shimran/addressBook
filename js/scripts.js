@@ -1,7 +1,9 @@
-// var fullAddress = function(address){
-//
-//
-// };
+var fullAddress = function(address){
+
+var formattedAddress = address.street + "\n" +address.city + " "+ address.state + " " +address.zip;
+return formattedAddress;
+
+};
 
 $(document).ready(function(){
   $("#show-contact").hide();
@@ -43,11 +45,11 @@ $(document).ready(function(){
       $("#show-contact h2").text(newContact.firstName + " " + newContact.lastName);
       $(".first-name").text(newContact.firstName);
       $(".last-name").text(newContact.lastName);
-      //$(".address").text(newContact.address);
-      $(".street").text(newContact.street);
-      $(".city").text(newContact.city);
-      $(".state").text(newContact.state);
-      $(".zip").text(newContact.zip);
+      $(".address").text(fullAddress(newContact));
+      // $(".street").text(newContact.street);
+      // $(".city").text(newContact.city);
+      // $(".state").text(newContact.state);
+      // $(".zip").text(newContact.zip);
       $(".telephone").text(newContact.telephone);
     });
   });

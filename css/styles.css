@@ -12,7 +12,7 @@
 }
 
 
-.city{
-  text-indent:200px;
 
+.address {
+  white-space: pre;
 }
