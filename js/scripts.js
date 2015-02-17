@@ -1,4 +1,10 @@
+// var fullAddress = function(address){
+//
+//
+// };
+
 $(document).ready(function(){
+  $("#show-contact").hide();
   $('form#new-contact').submit(function(event) {
     event.preventDefault();
 
@@ -40,7 +46,7 @@ $(document).ready(function(){
       //$(".address").text(newContact.address);
       $(".street").text(newContact.street);
       $(".city").text(newContact.city);
-      $("state").text(newContact.state);
+      $(".state").text(newContact.state);
       $(".zip").text(newContact.zip);
       $(".telephone").text(newContact.telephone);
     });
