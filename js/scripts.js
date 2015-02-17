@@ -9,7 +9,7 @@ $(document).ready(function(){
     var inputStreet = $("input#new-street").val();
     var inputCity = $("input#new-city").val();
     var inputState = $("input#new-state").val();
-    var inputZip = parseInt($("input#new-zip")).val();
+    var inputZip = parseInt($("input#new-zip").val());
     var newContact = { firstName: inputFirstName,
       lastName: inputLastName,
       street: inputStreet,
