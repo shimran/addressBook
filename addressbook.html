@@ -46,12 +46,14 @@
           </div>
 
           <div class="form-group">
-            <label for="new-telephone">Telephone No.</label>
+            <label for="new-telephone">Primary Telephone No.</label>
             <input type="text" class="form-control" id="new-telephone">
           </div>
 
           <button type="submit" class="btn"> Add</button>
         </form>
+
+
         <h2>Contacts:</h2>
         <ul id="contact">
         </ul>
@@ -60,7 +62,7 @@
 
 
       <div class="col-md-6">
-        <div id="show-contact">
+         <div id="show-contact">
 
           <dl class="dl-horizontal">
             <h2> </h2>
@@ -69,7 +71,11 @@
             <dt>Address:</dt> <dd><span class="address"></dd>
             <dt>Telephone:</dt> <dd class="telephone"></dd>
           </dl>
+            <button class="btn" id="add-phone" type="submit">Add Additional Phone Numbers </button>
+            <button class="btn"  id="add-address" type="submit">Add Additional Address</button>
 
+            <div class="dl-horizontal" id='new-phones'></div>
+            <div class="dl-horizontal" id='new-address'></div>
         </div>
     </div>
 
